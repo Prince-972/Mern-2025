@@ -1,15 +1,17 @@
-import React from 'react';
+import React from 'react'
 
-const Home = ({ items }) => {
+const Home = ({items,users}) => {
   return (
-    <div>
-      <ol>
-        {items.map((fruit, index) => (
-          <li key={index}>{fruit}</li>
-        ))}
+ 
+    <div>Home
+  
+      <ol type="i">
+        {items.map((fruit)=>(<li>{fruit}</li>))}
       </ol>
+      <h3>{users.name} {users.password}</h3>
     </div>
-  );
-};
+  
+  )
+}
 
-export default Home;
+export default Home
